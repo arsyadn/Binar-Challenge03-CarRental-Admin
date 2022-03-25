@@ -1,0 +1,73 @@
+.form-car{
+    background-color:#fff;
+    border-radius:2px;
+    padding:16px;
+    box-sizing: border-box;
+}
+.form-group{
+    margin-bottom:16px;
+}
+
+.form-group label, .form-group p{
+    color: #3C3C3C;
+    font-size: 12px;
+    font-weight: 300;
+    
+}
+.form-group span{
+    color: #FA2C5A;
+}
+::placeholder {
+    font-weight: 300 !important;
+    color:  #8A8A8A !important;
+    font-size:18px;
+  }
+
+.form-inside .form-group .small-text{
+    font-weight: 300;
+    color:  #8A8A8A;
+    font-size:10px;
+    margin-bottom:0;
+}
+.form-inside input{
+    width:339px;
+}
+.form-inside .form-fill{
+    margin-bottom:16px;
+}
+
+.form-inside .dummy{
+    margin-bottom:0;
+}
+
+/* Button */
+
+.btn-save-cancel{
+    margin-top:290px;
+    margin-bottom:48px;
+}
+.btn-cancel{
+    background-color: #fff;
+    color: #0D28A6;
+    border: 1px solid #0D28A6;
+    font-weight: 700;
+    width: 70px; 
+    font-size:14px;
+}
+.btn-cancel:hover{
+    background-color:#0D28A6;
+    color:#fff;
+}
+
+.btn-save{
+    background-color: #0D28A6;
+    color: #fff;
+    font-weight: 700;
+    width: 70px; 
+    font-size:14px;
+}
+.btn-save:hover{
+    background-color:#fff;
+    color:#0D28A6;
+    border: 1px solid #0D28A6;
+}

@@ -1,0 +1,102 @@
+<%- include("partials/header") %>
+    <title> <%= title %> </title>
+	<link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/add-cars.css">
+    
+</head>
+	
+	<!-- SIDEBAR -->
+	<%- include("partials/sidebar-list-car") %>
+	<!-- SIDEBAR -->
+
+    <div class="right-side w-100">
+    <!-- NAVBAR -->
+    <%- include("partials/navbar") %>
+    <!-- NAVBAR -->
+        <!-- Content -->
+        <div class="container-fluid" style="background-color:#F4F5F7; padding: 0 20px;">
+            <!-- Dashboard Title -->
+            <div class="dash-title">
+                <div class="title-dashboard d-flex align-items-center" style="margin-bottom: 27px;">
+                    <p class="title-bold">Cars</p>
+                    <p style="margin: 0 4px;"><i class='bx bx-chevron-right title-bold'></i></p>
+                    <p class="title-bold">List Cars</p>
+                    <p style="margin: 0 4px;"><i class='bx bx-chevron-right title-bold'></i></p>
+                    <p class="title-light">Add New Car</p>
+                </div>
+                <p class="font-dashboard" style="margin-bottom: 16px;">Add New Car</p>
+            </div>
+            <!-- Dashboard Title -->
+
+            <!-- Form -->
+            <div class="form-car">
+                <div class="form-inside w-75">
+                    <form>
+                        <div class="form-group row form-fill">
+                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Nama<span>*</span></label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Placeholder">
+                        </div>
+                        </div>
+                        <div class="form-group row form-fill">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Harga<span>*</span></label>
+                            <div class="col-sm-10">
+                            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Placeholder">
+                            </div>
+                        </div>
+                        <div class="form-group row form-fill">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Harga<span>*</span></label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Placeholder">
+                            </div>
+                        </div>
+                        <div class="form-group row form-fill">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Foto<span>*</span></label>
+                            <div class="col-sm-10">
+                                <input type="file" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Placeholder">
+                                <small id="emailHelp" class="form-text text-muted small-text">File size max. 2MB</small>
+                            </div>
+                        </div>
+                        <div class="form-group row dummy">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Start Rent</label>
+                            <div class="col-sm-10">
+                            <p>-</p>
+                            </div>
+                        </div>
+                        <div class="form-group row dummy">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Finished Rent</label>
+                            <div class="col-sm-10">
+                            <p>-</p>
+                            </div>
+                        </div>
+                        <div class="form-group row dummy">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Created at</label>
+                            <div class="col-sm-10">
+                            <p>-</p>
+                            </div>
+                        </div>
+                        <div class="form-group row dummy">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Updated at</label>
+                            <div class="col-sm-10">
+                            <p>-</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- Form -->
+
+            <!-- Button -->
+            <div class="btn-save-cancel">
+                <a href="/list-cars"><button class="btn btn-cancel my-2 my-sm-0" type="button">Cancel</button></a>
+                <a href="/list-cars"><button class="btn btn-save my-2 my-sm-0" type="button" style="width: 57px; font-size:14px;">Save</button></a>
+            </div>
+            <!-- Button -->
+        </div>
+    </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/add-cars.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+<title>Login Page</title>
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="login d-flex align-items-center ">
+    <div class="log-img">
+        <img src="images/img_cars2.svg" alt="cars image" class="img-login w-100 vh-100 img-fluid" style="object-fit:cover; object-position:right;">
+     </div>
+     
+     <div class="login-form m-auto font-weight-bold">
+        <p class="w-0" style="background-color: #CFD4ED; width:100px; height:34px;"></p>
+        <h1>Welcome, Admin BCR</h1>
+         <form action="/login" method="post">
+            <div class="form-outline mb-4 mt-4">
+                <label class="form-label">Email</label>
+                <input type="email"  id="form2Example18" class="placeholders form-control form-control-lg" placeholder="Contoh: johndee@gmail.com"/>
+              </div>
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form2Example28">Password</label>
+                <input type="password" id="form2Example28" class="form-control form-control-lg" placeholder="6+ karakter"/>
+              </div>
+              <div class="pt-1 mb-4">
+                <a href="/"><button class="btn btn-clicks font-weight-bold" type="submit">Sign In</button></a>
+              </div>
+         </form>
+     </div>
+ </div>
+
+ <%- include("partials/footer") %>

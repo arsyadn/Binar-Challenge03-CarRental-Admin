@@ -1,0 +1,81 @@
+.title-list-cars .btn-go{
+    background-color: #0D28A6;
+    color: #fff;
+	border: 1px solid #0D28A6;
+    font-weight: 600;
+	font-size: 12px !important;
+}
+.title-list-cars .btn-go:hover{
+    background-color:#fff;
+    color:#0D28A6;
+    font-weight: 500;
+	border: 1px solid #0D28A6;
+	border-radius: 2px !important;
+}
+
+.cars-small{
+    margin : 0 16px;
+}
+.cars-large{
+    margin-left: 16px;
+}
+
+.card{
+    padding:24px;
+    box-sizing: border-box;
+    margin-right: 12px;
+}
+.img-catalog{
+    padding: 31px 16px;
+}
+.start-finish, .updated-cars{
+    margin-bottom: 16px;
+}
+.card .btn-card-link{
+    margin-bottom: 16px;
+    width: 140px;
+}
+.cars-name{
+    font-size:14px;
+    font-weight:400px;
+    margin-bottom: 8px;
+}
+.cars-price{
+    font-size:16px;
+    font-weight:bold;
+}
+.cars-start-update{
+    font-size:14px;
+}
+.btn-card-delete{
+    background-color: #fff;
+    color: #FA2C5A;
+    border: 2px solid #FA2C5A;
+    font-weight: 700;
+    margin-right: 8px;
+    width: 143px;
+    margin-right: 8px;
+}
+
+.btn-card-delete:hover{
+    background-color: #FA2C5A;
+    color: #fff;
+}
+
+.btn-card-edit{
+    background-color: #5CB85F;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 8px;
+    width: 143px;
+    margin-left: 8px;
+}
+.btn-card-edit:hover{
+    background-color: #fff;
+    color: #5CB85F;
+    border: 2px solid #5CB85F;
+}
+
+.btn-card-link i{
+    font-weight: 700;
+}

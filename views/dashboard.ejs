@@ -1,0 +1,409 @@
+<%- include("partials/header") %>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+	
+	<!-- Sidebar -->
+	<div class="divide-side d-flex w-100">
+		<div class="left-side d-flex">
+			<div class="nav-icon d-flex flex-column" style="width:70px; height:902px; background-color:#0D28A6">
+				<div class="sidebar-logo">
+					<p class="icon-sidebar" style="width:34px; height:34px; background-color:#CFD4ED"></p>
+				</div>	
+				<a href="#" class="items-sidebar-menu-active">
+					<img src="images/icon_home.svg" alt="icon home" class="icon-sidebar-menu"> 
+					<p style="margin: 0 2px;">Dashboard</p>
+				</a>
+				<a href="/list-cars" class="items-sidebar-menu">
+					<img src="images/icon_truck.svg" alt="icon cars" class="icon-sidebar-menu">
+					<p style="margin: 0 20px;">Cars</p>
+				</a>
+			</div>
+			
+			<div class="white-sidebar">
+				<div class="top-sidebar">
+					<p class="longer-logo"></p>
+				</div>
+				<div class="bottom-sidebar">
+					<div class="title-main-menu">
+						<p>DASHBOARD</p>
+					</div>
+					<div class="title-main-sec">
+						<p>Dashboard</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Sidebar -->
+		<div class="right-side w-100">
+
+			
+				<!-- NAVBAR -->
+				<%- include("partials/navbar") %>
+				<!-- NAVBAR -->
+
+				<!-- Content -->
+				<div class="container-fluid" style="background-color:#F4F5F7; padding: 0 25px;">
+				
+					<!-- Dashboard Title -->
+					<div class="dash-title">
+						<div class="title-dashboard d-flex" style="	margin-bottom: 24px;">
+							<div class="title-dashboard d-flex align-items-center">
+								<p class="title-bold">Dashboard</p>
+								<p style="margin: 0 4px;"><i class='bx bx-chevron-right title-bold'></i></p>
+								<p class="title-light">Dashboard</p>
+							</div>
+						</div>
+						<p class="font-dashboard">Dashboard</p>
+						<div class="list-order d-flex align-items-center">
+							<p style="width:4px; height:24px; background-color:#0D28A6"></p>
+							<p class="font-list">List Order</p>
+						</div>
+					</div>
+					<!-- Dashboard Title -->
+
+					<!-- Table 1 -->
+					<table class="table table-hover rounded">
+						<thead class="thead" style="border: 0px;">
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">User Email</th>
+							<th scope="col">Car</th>
+							<th scope="col">Start Rent</th>
+							<th scope="col">Finish Rent</th>
+							<th scope="col">Price</th>
+							<th scope="col">Status</th>
+						</tr>
+						</thead>
+						<tbody class="tbody">
+						<tr>
+							<th scope="row">1</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						<tr>
+							<th scope="row">6</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						<tr>
+							<th scope="row">7</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						<tr>
+							<th scope="row">8</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						<tr>
+							<th scope="row">9</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						<tr>
+							<th scope="row">10</th>
+							<td>User Email</td>
+							<td>Car</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Price</td>
+							<td>Status</td>
+						</tr>
+						</tbody>
+					</table>
+					</table>
+					<!-- Table 1 -->
+
+					<!-- Pagination 1 -->
+					<div class="first-pagination d-flex justify-content-between align-items-center">
+						<div class="page-left d-flex">
+							<div class="page-limit">
+								<p class="font-limit">Limit</p>
+								<div class="dropdown">
+									<button class="btn btn-light dropdown-toggle btn-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									10
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">20</a>
+									<a class="dropdown-item" href="#">30</a>
+									<a class="dropdown-item" href="#">40</a>
+									</div>
+								</div>
+							</div>
+							<div class="jump-page">
+								<p class="font-limit">Jump to Page</p>
+								<div class="page-go d-flex">
+									<div class="dropdown">
+										<button class="btn btn-light dropdown-toggle btn-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 76px;">
+										1  
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">2</a>
+										<a class="dropdown-item" href="#">3</a>
+										<a class="dropdown-item" href="#">4</a>
+										</div>
+									</div>
+									<button class="btn btn-go btn-outline-success my-2 my-sm-0" type="submit" style="width: 43px; font-size:14px;">Go</button>
+								</div>
+							</div>
+						</div>
+						<div class="page">
+							<ul class="pagination">
+							<li class="page-item disabled">
+								<a class="page-link" href="#" tabindex="-1">&laquo;</a>
+							</li>
+							<li class="page-item active">
+								<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">...</a></li>
+							<li class="page-item"><a class="page-link" href="#">9</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#">&raquo;</a>
+							</li>
+							</ul>
+						</div>			  
+					</div>
+					<!-- Pagination 1 -->
+
+					<!-- Table 2 -->
+					<table class="table table-hover rounded">
+						<thead class="thead" style="border: 0px;">
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">Name</th>
+							<th scope="col">Category</th>
+							<th scope="col">Price</th>
+							<th scope="col">Start Rent</th>
+							<th scope="col">Finish Rent</th>
+							<th scope="col">Created at</th>
+							<th scope="col">Updated at</th>
+						</tr>
+						</thead>
+						<tbody class="tbody">
+						<tr>
+							<th scope="row">1</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>-</td>
+							<td>-</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>-</td>
+							<td>-</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						<tr>
+							<th scope="row">6</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						<tr>
+							<th scope="row">7</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						<tr>
+							<th scope="row">8</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						<tr>
+							<th scope="row">9</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						<tr>
+							<th scope="row">10</th>
+							<td>Name</td>
+							<td>Category</td>
+							<td>Price</td>
+							<td>Start Rent</td>
+							<td>Finish Rent</td>
+							<td>Created at</td>
+							<td>Updated at</td>
+						</tr>
+						</tbody>
+					</table>
+					</table>
+					<!-- Table 2 -->
+
+					<!-- Pagination 2 -->
+					<div class="second-pagination d-flex justify-content-between align-items-center">
+						<div class="page-left d-flex">
+							<div class="page-limit">
+								<p class="font-limit">Limit</p>
+								<div class="dropdown">
+									<button class="btn btn-light dropdown-toggle btn-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									50
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">20</a>
+									<a class="dropdown-item" href="#">30</a>
+									<a class="dropdown-item" href="#">40</a>
+									</div>
+								</div>
+							</div>
+							<div class="jump-page">
+								<p class="font-limit">Jump to Page</p>
+								<div class="page-go d-flex">
+									<div class="dropdown">
+										<button class="btn btn-light dropdown-toggle btn-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 76px;">
+										1  
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">2</a>
+										<a class="dropdown-item" href="#">3</a>
+										<a class="dropdown-item" href="#">4</a>
+										</div>
+									</div>
+									<button class="btn btn-go btn-outline-success my-2 my-sm-0" type="submit" style="width: 43px; font-size:14px;">Go</button>
+								</div>
+							</div>
+						</div>
+						<div class="page">
+							<ul class="pagination">
+							<li class="page-item disabled">
+								<a class="page-link" href="#" tabindex="-1">&laquo;</a>
+							</li>
+							<li class="page-item active">
+								<a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">...</a></li>
+							<li class="page-item"><a class="page-link" href="#">9</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#">&raquo;</a>
+							</li>
+							</ul>
+						</div>			  
+					</div>
+					<!-- Pagination 2 -->
+				</div>
+			
+		</div>
+	</div>
+	<script src="js/dashboard.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	
+
+	<%- include("partials/footer") %>

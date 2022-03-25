@@ -1,0 +1,308 @@
+<%- include("partials/header") %>
+	<title> <%= title %> </title>
+	<link rel="stylesheet" href="css/dashboard.css">
+	<link rel="stylesheet" href="css/list-cars.css">
+</head>
+	
+	<!-- SIDEBAR -->
+	<%- include("partials/sidebar-list-car") %>
+	<!-- SIDEBAR -->
+	<div class="right-side w-100">
+	<!-- NAVBAR -->
+	<%- include("partials/navbar") %>
+	<!-- NAVBAR -->
+		<!-- Content -->
+				<div class="container-fluid" style="background-color:#F4F5F7; padding: 0 20px;">
+
+				<!-- Dashboard Title -->
+				<div class="dash-title">
+					<div class="title-dashboard d-flex align-items-center" style="	margin-bottom: 27px;">
+						<p class="title-bold">Cars</p>
+						<p style="margin: 0 4px;"><i class='bx bx-chevron-right title-bold'></i></p>
+						<p class="title-light">List Car</p>
+					</div>
+					<div class="title-list-cars d-flex justify-content-between">
+						<p class="font-dashboard">List Cars</p>
+						<a href="/add-cars"><button class="btn btn-go my-2 my-sm-0" type="button" style="width: 142px; font-size:14px;">+  Add New Car</button></a>
+					</div>
+					<div class="type-cars mb-3">
+						<ul class="pagination">
+						<li class="page-item active">
+							<a class="page-link" href="#">All <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="page-item cars-small "><a class="page-link" href="#">Small</a></li>
+						<li class="page-item"><a class="page-link" href="#">Medium</a></li>
+						<li class="page-item cars-large "><a class="page-link" href="#">Large</a></li>
+						</ul>
+					</div>	
+				</div>
+
+				<!-- Dashboard Title -->
+
+				<!-- List Cars -->
+				<div class="catalog-cars d-flex flex-wrap">
+					<div class="card" style="width: 351px; height:482px">
+						<div class="img-catalog">
+							<img class="card-img-top" src="images/img_innova.svg" alt="Image Car Rental">
+						</div>	
+						<div class="card-body">
+						<p class="cars-name">Nama/Tipe Mobil</p>
+						<p class="cars-price">Rp. 430.000 / hari</p>
+						<div class="start-finish d-flex align-items-center">
+							<img src="images/icon_key.svg" alt="icon key">
+							<p class="mb-0 cars-start-update font-weight-light">Start rent - Finish rent</p>
+						</div>
+						<div class="updated-cars d-flex align-items-center">
+							<img src="images/icon_clock.svg" alt="icon clock">
+							<p class="mb-0 cars-start-update font-weight-light" >Updated at 4 Apr 2022, 09.00</p>
+						</div>
+						
+							<div class="btn-card d-flex justify-content-between">
+								<a href="#" class="btn btn-card-link btn-card-delete d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-trash-alt'></i>
+									<p class="mb-0">Delete</p>
+								</a>
+								<a href="/edit-cars" class="btn btn-card-link btn-card-edit d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-edit'></i>
+									<p class="mb-0">Edit</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 351px; height:482px">
+						<div class="img-catalog">
+							<img class="card-img-top" src="images/img_innova.svg" alt="Image Car Rental">
+						</div>	
+						<div class="card-body">
+						<p class="cars-name">Nama/Tipe Mobil</p>
+						<p class="cars-price">Rp. 430.000 / hari</p>
+						<div class="start-finish d-flex align-items-center">
+							<img src="images/icon_key.svg" alt="icon key">
+							<p class="mb-0 cars-start-update font-weight-light">Start rent - Finish rent</p>
+						</div>
+						<div class="updated-cars d-flex align-items-center">
+							<img src="images/icon_clock.svg" alt="icon clock">
+							<p class="mb-0 cars-start-update font-weight-light" >Updated at 4 Apr 2022, 09.00</p>
+						</div>
+						
+							<div class="btn-card d-flex justify-content-between">
+								<a href="#" class="btn btn-card-link btn-card-delete d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-trash-alt'></i>
+									<p class="mb-0">Delete</p>
+								</a>
+								<a href="/edit-cars" class="btn btn-card-link btn-card-edit d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-edit'></i>
+									<p class="mb-0">Edit</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 351px; height:482px">
+						<div class="img-catalog">
+							<img class="card-img-top" src="images/img_innova.svg" alt="Image Car Rental">
+						</div>	
+						<div class="card-body">
+						<p class="cars-name">Nama/Tipe Mobil</p>
+						<p class="cars-price">Rp. 430.000 / hari</p>
+						<div class="start-finish d-flex align-items-center">
+							<img src="images/icon_key.svg" alt="icon key">
+							<p class="mb-0 cars-start-update font-weight-light">Start rent - Finish rent</p>
+						</div>
+						<div class="updated-cars d-flex align-items-center">
+							<img src="images/icon_clock.svg" alt="icon clock">
+							<p class="mb-0 cars-start-update font-weight-light" >Updated at 4 Apr 2022, 09.00</p>
+						</div>
+						
+							<div class="btn-card d-flex justify-content-between">
+								<a href="#" class="btn btn-card-link btn-card-delete d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-trash-alt'></i>
+									<p class="mb-0">Delete</p>
+								</a>
+								<a href="/edit-cars" class="btn btn-card-link btn-card-edit d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-edit'></i>
+									<p class="mb-0">Edit</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 351px; height:482px">
+						<div class="img-catalog">
+							<img class="card-img-top" src="images/img_innova.svg" alt="Image Car Rental">
+						</div>	
+						<div class="card-body">
+						<p class="cars-name">Nama/Tipe Mobil</p>
+						<p class="cars-price">Rp. 430.000 / hari</p>
+						<div class="start-finish d-flex align-items-center">
+							<img src="images/icon_key.svg" alt="icon key">
+							<p class="mb-0 cars-start-update font-weight-light">Start rent - Finish rent</p>
+						</div>
+						<div class="updated-cars d-flex align-items-center">
+							<img src="images/icon_clock.svg" alt="icon clock">
+							<p class="mb-0 cars-start-update font-weight-light" >Updated at 4 Apr 2022, 09.00</p>
+						</div>
+						
+							<div class="btn-card d-flex justify-content-between">
+								<a href="#" class="btn btn-card-link btn-card-delete d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-trash-alt'></i>
+									<p class="mb-0">Delete</p>
+								</a>
+								<a href="/edit-cars" class="btn btn-card-link btn-card-edit d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-edit'></i>
+									<p class="mb-0">Edit</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 351px; height:482px">
+						<div class="img-catalog">
+							<img class="card-img-top" src="images/img_innova.svg" alt="Image Car Rental">
+						</div>	
+						<div class="card-body">
+						<p class="cars-name">Nama/Tipe Mobil</p>
+						<p class="cars-price">Rp. 430.000 / hari</p>
+						<div class="start-finish d-flex align-items-center">
+							<img src="images/icon_key.svg" alt="icon key">
+							<p class="mb-0 cars-start-update font-weight-light">Start rent - Finish rent</p>
+						</div>
+						<div class="updated-cars d-flex align-items-center">
+							<img src="images/icon_clock.svg" alt="icon clock">
+							<p class="mb-0 cars-start-update font-weight-light" >Updated at 4 Apr 2022, 09.00</p>
+						</div>
+						
+							<div class="btn-card d-flex justify-content-between">
+								<a href="#" class="btn btn-card-link btn-card-delete d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-trash-alt'></i>
+									<p class="mb-0">Delete</p>
+								</a>
+								<a href="/edit-cars" class="btn btn-card-link btn-card-edit d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-edit'></i>
+									<p class="mb-0">Edit</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 351px; height:482px">
+						<div class="img-catalog">
+							<img class="card-img-top" src="images/img_innova.svg" alt="Image Car Rental">
+						</div>	
+						<div class="card-body">
+						<p class="cars-name">Nama/Tipe Mobil</p>
+						<p class="cars-price">Rp. 430.000 / hari</p>
+						<div class="start-finish d-flex align-items-center">
+							<img src="images/icon_key.svg" alt="icon key">
+							<p class="mb-0 cars-start-update font-weight-light">Start rent - Finish rent</p>
+						</div>
+						<div class="updated-cars d-flex align-items-center">
+							<img src="images/icon_clock.svg" alt="icon clock">
+							<p class="mb-0 cars-start-update font-weight-light" >Updated at 4 Apr 2022, 09.00</p>
+						</div>
+						
+							<div class="btn-card d-flex justify-content-between">
+								<a href="#" class="btn btn-card-link btn-card-delete d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-trash-alt'></i>
+									<p class="mb-0">Delete</p>
+								</a>
+								<a href="/edit-cars" class="btn btn-card-link btn-card-edit d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-edit'></i>
+									<p class="mb-0">Edit</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 351px; height:482px">
+						<div class="img-catalog">
+							<img class="card-img-top" src="images/img_innova.svg" alt="Image Car Rental">
+						</div>	
+						<div class="card-body">
+						<p class="cars-name">Nama/Tipe Mobil</p>
+						<p class="cars-price">Rp. 430.000 / hari</p>
+						<div class="start-finish d-flex align-items-center">
+							<img src="images/icon_key.svg" alt="icon key">
+							<p class="mb-0 cars-start-update font-weight-light">Start rent - Finish rent</p>
+						</div>
+						<div class="updated-cars d-flex align-items-center">
+							<img src="images/icon_clock.svg" alt="icon clock">
+							<p class="mb-0 cars-start-update font-weight-light" >Updated at 4 Apr 2022, 09.00</p>
+						</div>
+						
+							<div class="btn-card d-flex justify-content-between">
+								<a href="#" class="btn btn-card-link btn-card-delete d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-trash-alt'></i>
+									<p class="mb-0">Delete</p>
+								</a>
+								<a href="/edit-cars" class="btn btn-card-link btn-card-edit d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-edit'></i>
+									<p class="mb-0">Edit</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 351px; height:482px">
+						<div class="img-catalog">
+							<img class="card-img-top" src="images/img_innova.svg" alt="Image Car Rental">
+						</div>	
+						<div class="card-body">
+						<p class="cars-name">Nama/Tipe Mobil</p>
+						<p class="cars-price">Rp. 430.000 / hari</p>
+						<div class="start-finish d-flex align-items-center">
+							<img src="images/icon_key.svg" alt="icon key">
+							<p class="mb-0 cars-start-update font-weight-light">Start rent - Finish rent</p>
+						</div>
+						<div class="updated-cars d-flex align-items-center">
+							<img src="images/icon_clock.svg" alt="icon clock">
+							<p class="mb-0 cars-start-update font-weight-light" >Updated at 4 Apr 2022, 09.00</p>
+						</div>
+						
+							<div class="btn-card d-flex justify-content-between">
+								<a href="#" class="btn btn-card-link btn-card-delete d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-trash-alt'></i>
+									<p class="mb-0">Delete</p>
+								</a>
+								<a href="/edit-cars" class="btn btn-card-link btn-card-edit d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-edit'></i>
+									<p class="mb-0">Edit</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 351px; height:482px">
+						<div class="img-catalog">
+							<img class="card-img-top" src="images/img_innova.svg" alt="Image Car Rental">
+						</div>	
+						<div class="card-body">
+						<p class="cars-name">Nama/Tipe Mobil</p>
+						<p class="cars-price">Rp. 430.000 / hari</p>
+						<div class="start-finish d-flex align-items-center">
+							<img src="images/icon_key.svg" alt="icon key">
+							<p class="mb-0 cars-start-update font-weight-light">Start rent - Finish rent</p>
+						</div>
+						<div class="updated-cars d-flex align-items-center">
+							<img src="images/icon_clock.svg" alt="icon clock">
+							<p class="mb-0 cars-start-update font-weight-light" >Updated at 4 Apr 2022, 09.00</p>
+						</div>
+						
+							<div class="btn-card d-flex justify-content-between">
+								<a href="#" class="btn btn-card-link btn-card-delete d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-trash-alt'></i>
+									<p class="mb-0">Delete</p>
+								</a>
+								<a href="/edit-cars" class="btn btn-card-link btn-card-edit d-flex align-items-center justify-content-between cars-start-update" style="padding: 14px 36px;">
+									<i class='bx bx-edit'></i>
+									<p class="mb-0">Edit</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- List Cars -->
+
+			</div>	
+		</div>
+	</div>	
+	<!-- Content -->
+
+<script src="js/dashboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<%- include("partials/footer") %>
