@@ -23,17 +23,24 @@
 .card{
     padding:24px;
     box-sizing: border-box;
-    margin-right: 12px;
+    margin-right: 10px;
+    margin-bottom: 24px;
+    width: 300px;
+    height:450px;
 }
 .img-catalog{
     padding: 31px 16px;
+}
+.card-body{
+    padding:0;
 }
 .start-finish, .updated-cars{
     margin-bottom: 16px;
 }
 .card .btn-card-link{
-    margin-bottom: 16px;
-    width: 140px;
+    margin-bottom: 10px;
+    width: 120px;
+    margin-top: 16px;
 }
 .cars-name{
     font-size:14px;
@@ -47,13 +54,15 @@
 .cars-start-update{
     font-size:14px;
 }
+.text-card-rent{
+    margin-left: 10px;
+}
 .btn-card-delete{
     background-color: #fff;
     color: #FA2C5A;
     border: 2px solid #FA2C5A;
     font-weight: 700;
     margin-right: 8px;
-    width: 143px;
     margin-right: 8px;
 }
 
@@ -67,7 +76,6 @@
     color: #fff;
     font-weight: 700;
     margin-left: 8px;
-    width: 143px;
     margin-left: 8px;
 }
 .btn-card-edit:hover{
@@ -78,4 +86,8 @@
 
 .btn-card-link i{
     font-weight: 700;
+}
+
+.font-delete-edit{
+    margin-left: 8px;
 }
